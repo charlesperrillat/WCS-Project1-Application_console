@@ -13,6 +13,7 @@ namespace _2404_C_Projet1_Application_console
 		{
             while (true)
             {
+                Console.WriteLine("You are in the \"Students\" menu, what do you want to do?");
                 Console.WriteLine();
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("1. List students");

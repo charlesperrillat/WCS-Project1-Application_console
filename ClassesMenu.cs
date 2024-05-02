@@ -4,6 +4,8 @@ namespace _2404_C_Projet1_Application_console
 	public class ClassesMenu
 	{
 
+        ClassManager classManager = new ClassManager();
+
         public ClassesMenu()
 		{
 		}
@@ -12,6 +14,7 @@ namespace _2404_C_Projet1_Application_console
         {
             while (true)
             {
+                Console.WriteLine("You are in the \"Classes\" menu, what do you want to do?");
                 Console.WriteLine();
                 Console.WriteLine("--------------------------------------");
                 Console.WriteLine("1. List existing classes");
@@ -47,14 +50,16 @@ namespace _2404_C_Projet1_Application_console
                 if (userQuery == "1")
                 {
                     Console.WriteLine("Here is the list of the existing classes:");
+                    Console.WriteLine("");
+                    foreach (Classes lesson in classManager.listOfClasses)
+                        Console.WriteLine(lesson.Id + " - " + lesson.Name);
+                    Console.WriteLine("");
                 }
                 else if (userQuery == "2")
-                {
-                    Console.WriteLine("Which class do you want to add to the program?");
-                }
+                    classManager.CreateClass();
                 else if (userQuery == "3")
                 {
-                    Console.WriteLine("Which class do you want to delete? Please enter the identifier of the class: ");
+                    classManager.DeleteClass();
                 }
                 else if (userQuery == "4")
                 {

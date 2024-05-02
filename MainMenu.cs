@@ -43,15 +43,9 @@ namespace _2404_C_Projet1_Application_console
 				}
 
 				if (userQuery == "1")
-				{
-					Console.WriteLine("You have entered the \"Students\" menu, what do you want to do?");
 					studentMenuManager.DisplayMenu();
-				}
 				else if (userQuery == "2")
-				{
-					Console.WriteLine("You have entered the \"Classes\" menu, what do you want to do?");
 					classesMenuManager.DisplayMenu();
-				}
 			}
 		}
 
