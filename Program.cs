@@ -4,11 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Maths maths = new Maths(1, "Maths");
+        MainMenu menuManager = new MainMenu();
 
-        maths.DisplayListOfClasses();
+        menuManager.DisplayMenu();
 
-        MainMenu.Menu();
+        
     }
 }
 
